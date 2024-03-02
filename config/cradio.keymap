@@ -37,10 +37,10 @@
 
         right_layer {
             bindings = <
-&kp DOLLAR       &kp AMPERSAND  &ht RIGHT_BRACE LEFT_BRACE  &ht RIGHT_BRACKET LEFT_BRACKET  &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END   &kp COLON
-&kp EXCLAMATION  &kp HASH       &kp TILDE                   &kp ESC                         &ht BACKSLASH SLASH                       &kp LARW  &kp DARW   &kp UARW   &kp RARW  &kp SEMI
-&kp PERCENT      &kp GRAVE      &kp CARET                   &kp AT_SIGN                     &kp QUESTION                              &trans    &trans     &trans     &trans    &trans
-                                                            &trans                          &kp ESC                                   &trans    &trans
+&kp DOLLAR       &kp AMPERSAND  &ht RIGHT_BRACE LEFT_BRACE  &ht RIGHT_BRACKET LEFT_BRACKET  &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS    &kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
+&kp EXCLAMATION  &kp HASH       &kp TILDE                   &kp COLON                       &ht BACKSLASH SLASH                       &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp UNDERSCORE
+&kp PERCENT      &kp GRAVE      &kp CARET                   &kp AT_SIGN                     &kp QUESTION                              &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
+                                                            &trans                          &kp ESC                                   &trans           &trans
             >;
         };
 
