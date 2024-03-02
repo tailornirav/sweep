@@ -37,19 +37,19 @@
 
         right_layer {
             bindings = <
-&kp DOLLAR       &kp AMPERSAND  &ht RIGHT_BRACE LEFT_BRACE  &ht RIGHT_BRACKET LEFT_BRACKET  &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS    &kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
-&kp EXCLAMATION  &kp HASH       &kp TILDE                   &kp COLON                       &ht BACKSLASH SLASH                       &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp UNDERSCORE
-&kp PERCENT      &kp GRAVE      &kp CARET                   &kp AT_SIGN                     &kp QUESTION                              &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS
-                                                            &trans                          &kp ESC                                   &trans           &trans
+&kp DOLLAR       &kp AMPERSAND  &ht RIGHT_BRACE LEFT_BRACE  &ht RIGHT_BRACKET LEFT_BRACKET  &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&kp EXCLAMATION  &kp HASH       &kp TILDE                   &kp COLON                       &ht BACKSLASH SLASH                       &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE
+&kp PERCENT      &kp GRAVE      &kp CARET                   &kp AT_SIGN                     &kp QUESTION                              &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS
+                                                            &trans                          &kp ESC                                   &trans        &trans
             >;
         };
 
         left_layer {
             bindings = <
-&trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans           &ht LA(F1) F1  &ht LA(F2) F2   &ht LA(F3) F3   &ht LA(F4) F4  &ht LA(F5) F5
-&kp LC(N)  &kp LC(H)  &kp LC(J)  &kp LC(K)  &kp LC(PRCNT)    &kp LA(TAB)    &ht LA(H) LEFT  &ht LA(J) DOWN  &ht LA(K) UP   &ht LA(L) RIGHT
-&trans     &trans     &trans     &trans     &trans           &kp LA(SPACE)  &kp LA(ENTER)   &kp LG(ENTER)   &kp LA(S)      &kp LA(BACKSPACE)
-                                 &trans     &trans           &kp ESC        &trans
+&kp LC(W)  &ht LC(RS(C)) LC(RS(V))  &ht LC(C) LC(V)  &kp LC(D)  &kp LC(T)    &ht LA(F1) F1  &ht LA(F2) F2   &ht LA(F3) F3   &ht LA(F4) F4  &ht LA(F5) F5
+&kp LC(N)  &kp LC(H)                &kp LC(J)        &kp LC(K)  &kp LC(L)    &kp LA(TAB)    &ht LA(H) LEFT  &ht LA(J) DOWN  &ht LA(K) UP   &ht LA(L) RIGHT
+&trans     &trans                   &trans           &trans     &trans       &kp LA(SPACE)  &kp LA(ENTER)   &kp LG(ENTER)   &kp LA(S)      &kp LA(BACKSPACE)
+                                                     &trans     &trans       &kp ESC        &trans
             >;
         };
 
