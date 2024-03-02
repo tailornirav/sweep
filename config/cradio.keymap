@@ -48,7 +48,7 @@
             bindings = <
 &kp LC(W)  &ht LC(RS(C)) LC(RS(V))  &ht LC(C) LC(V)  &kp LC(D)  &kp LC(T)    &ht LA(F1) F1  &ht LA(F2) F2   &ht LA(F3) F3   &ht LA(F4) F4  &ht LA(F5) F5
 &kp LC(N)  &kp LC(H)                &kp LC(J)        &kp LC(K)  &kp LC(L)    &kp LA(TAB)    &ht LA(H) LEFT  &ht LA(J) DOWN  &ht LA(K) UP   &ht LA(L) RIGHT
-&trans     &trans                   &trans           &trans     &trans       &kp LA(SPACE)  &kp LA(ENTER)   &kp LG(ENTER)   &kp LA(S)      &kp LA(BACKSPACE)
+&kp LC(Q)  &kp LC(X)                &kp LC(Z)        &kp LC(R)  &kp LC(A)    &kp LA(SPACE)  &kp LA(ENTER)   &kp LG(ENTER)   &kp LA(S)      &kp LA(BACKSPACE)
                                                      &trans     &trans       &kp ESC        &trans
             >;
         };
