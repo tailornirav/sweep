@@ -14,12 +14,19 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+    combos {
+        compatible = "zmk,combos";
+
+        control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <30 31>;
+        };
+
+        shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <32 33>;
         };
     };
 
@@ -28,10 +35,10 @@
 
         default_layer {
             bindings = <
-&kp SEMICOLON  &kp COMMA  &kp PERIOD  &kp P      &kp Y                    &kp F            &kp G       &kp C  &kp R  &kp L
-&kp A          &kp O      &kp E       &kp U      &kp I                    &kp D            &kp H       &kp T  &kp N  &kp S
-&kp SQT        &kp Q      &kp J       &kp K      &kp X                    &kp B            &kp M       &kp W  &kp V  &kp Z
-                                      &lt 2 TAB  &ht LEFT_SHIFT ESCAPE    &ht ENTER SPACE  &lt 1 BSPC
+&kp SEMICOLON  &kp COMMA  &kp PERIOD  &kp P      &kp Y                   &kp F            &kp G  &kp C  &kp R  &kp L
+&kp A          &kp O      &kp E       &kp U      &kp I                   &kp D            &kp H  &kp T  &kp N  &kp S
+&kp SQT        &kp Q      &kp J       &kp K      &kp X                   &kp B            &kp M  &kp W  &kp V  &kp Z
+                                      &lt 2 TAB  &ht ESCAPE BACKSPACE    &ht ENTER SPACE  &to 1
             >;
         };
 
@@ -40,16 +47,16 @@
 &kp DOLLAR       &kp AMPERSAND  &ht RIGHT_BRACE LEFT_BRACE  &ht RIGHT_BRACKET LEFT_BRACKET  &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &kp EXCLAMATION  &kp HASH       &kp TILDE                   &kp SLASH                       &ht BACKSLASH PIPE                        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE
 &kp PERCENT      &kp GRAVE      &kp CARET                   &kp AT_SIGN                     &kp QUESTION                              &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-                                                            &trans                          &kp LEFT_CONTROL                          &trans        &trans
+                                                            &trans                          &trans                                    &trans        &to 0
             >;
         };
 
         left_layer {
             bindings = <
-&kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &ht LA(F1) F1         &ht LA(F2) F2   &ht LA(F3) F3   &ht LA(F4) F4  &ht LA(F5) F5
-&trans           &trans             &trans             &trans           &trans        &trans                &ht LA(H) LEFT  &ht LA(J) DOWN  &ht LA(K) UP   &ht LA(L) RIGHT
-&trans           &trans             &trans             &trans           &trans        &kp LA(SPACE)         &kp LA(ENTER)   &kp LG(ENTER)   &kp LA(S)      &kp LA(BACKSPACE)
-                                                       &trans           &trans        &kp LS(LEFT_CONTROL)  &trans
+&kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &ht LA(F1) F1  &ht LA(F2) F2   &ht LA(F3) F3   &ht LA(F4) F4  &ht LA(F5) F5
+&trans           &trans             &trans             &trans           &trans        &trans         &ht LA(H) LEFT  &ht LA(J) DOWN  &ht LA(K) UP   &ht LA(L) RIGHT
+&trans           &trans             &trans             &trans           &trans        &kp LA(SPACE)  &kp LA(ENTER)   &kp LG(ENTER)   &kp LA(S)      &kp LA(BACKSPACE)
+                                                       &trans           &trans        &trans         &trans
             >;
         };
     };
