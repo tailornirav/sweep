@@ -16,29 +16,17 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
-    combos {
-        compatible = "zmk,combos";
-
-        control {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <30 31>;
-        };
-
-        shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <32 33>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp SEMICOLON  &kp COMMA  &kp PERIOD  &kp P      &kp Y    &kp F                 &kp G            &kp C  &kp R  &kp L
-&kp A          &kp O      &kp E       &kp U      &kp I    &kp D                 &kp H            &kp T  &kp N  &kp S
-&kp SQT        &kp Q      &kp J       &kp K      &kp X    &kp B                 &kp M            &kp W  &kp V  &kp Z
-                                      &lt 2 TAB  &to 1    &ht ESCAPE BACKSPACE  &ht ENTER SPACE
+&kp SEMICOLON  &kp COMMA  &kp PERIOD        &kp P               &kp Y             &kp F                 &kp G               &kp C             &kp R  &kp L
+&kp A          &kp O      &ht LEFT_SHIFT E  &ht LEFT_CONTROL U  &ht LEFT_ALT I    &ht LEFT_ALT D        &ht LEFT_CONTROL H  &ht LEFT_SHIFT T  &kp N  &kp S
+&kp SQT        &kp Q      &kp J             &kp K               &kp X             &kp B                 &kp M               &kp W             &kp V  &kp Z
+                                            &lt 2 TAB           &lt 1 LEFT_ALT    &ht ESCAPE BACKSPACE  &ht ENTER SPACE
             >;
         };
 
@@ -47,7 +35,7 @@
 &kp DOLLAR       &kp AMPERSAND  &ht RIGHT_BRACE LEFT_BRACE  &ht RIGHT_BRACKET LEFT_BRACKET  &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &kp EXCLAMATION  &kp HASH       &kp TILDE                   &kp SLASH                       &ht BACKSLASH PIPE                        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE
 &kp PERCENT      &kp GRAVE      &kp CARET                   &kp AT_SIGN                     &kp QUESTION                              &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-                                                            &trans                          &to 0                                     &trans        &trans
+                                                            &trans                          &trans                                    &trans        &trans
             >;
         };
 
