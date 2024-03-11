@@ -26,7 +26,7 @@
 &kp SEMICOLON  &kp COMMA  &kp PERIOD        &kp P               &kp Y             &kp F                 &kp G               &kp C             &kp R  &kp L
 &kp A          &kp O      &ht LEFT_SHIFT E  &ht LEFT_CONTROL U  &ht LEFT_ALT I    &ht LEFT_ALT D        &ht LEFT_CONTROL H  &ht LEFT_SHIFT T  &kp N  &kp S
 &kp SQT        &kp Q      &kp J             &kp K               &kp X             &kp B                 &kp M               &kp W             &kp V  &kp Z
-                                            &lt 2 TAB           &tog 1            &ht ESCAPE BACKSPACE  &ht ENTER SPACE
+                                            &lt 2 TAB           &lt 1 ENTER       &ht ESCAPE BACKSPACE  &ht ENTER SPACE
             >;
         };
 
