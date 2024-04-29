@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -24,10 +23,10 @@
 
         default_layer {
             bindings = <
-&kp SEMICOLON  &ht C_MUTE COMMA  &ht C_VOLUME_DOWN PERIOD  &ht C_VOLUME_UP P   &kp Y             &kp F                     &kp G               &kp C             &kp R           &kp L
-&kp A          &ht LEFT_WIN O    &ht LEFT_SHIFT E          &ht LEFT_CONTROL U  &ht LEFT_ALT I    &ht LEFT_ALT D            &ht LEFT_CONTROL H  &ht LEFT_SHIFT T  &ht LEFT_WIN N  &kp S
-&kp SQT        &kp Q             &kp J                     &kp K               &kp X             &kp B                     &kp M               &kp W             &kp V           &kp Z
-                                                           &ht LEFT TAB        &lt 1 ENTER       &ht ESCAPE LC(BACKSPACE)  &ht RIGHT SPACE
+&kp SEMICOLON  &kp COMMA       &kp PERIOD        &kp P               &kp Y             &kp F                     &kp G               &kp C             &kp R           &kp L
+&kp A          &ht LEFT_WIN O  &ht LEFT_SHIFT E  &ht LEFT_CONTROL U  &ht LEFT_ALT I    &ht LEFT_ALT D            &ht LEFT_CONTROL H  &ht LEFT_SHIFT T  &ht LEFT_WIN N  &kp S
+&kp SQT        &kp Q           &kp J             &kp K               &kp X             &kp B                     &kp M               &kp W             &kp V           &kp Z
+                                                 &ht LEFT TAB        &lt 1 ENTER       &ht ESCAPE LC(BACKSPACE)  &ht RIGHT SPACE
             >;
         };
 
@@ -36,7 +35,7 @@
 &kp DOLLAR       &kp AMPERSAND  &ht RIGHT_BRACE LEFT_BRACE  &ht RIGHT_BRACKET LEFT_BRACKET  &ht RIGHT_PARENTHESIS LEFT_PARENTHESIS    &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
 &kp EXCLAMATION  &kp HASH       &kp TILDE                   &kp SLASH                       &ht BACKSLASH PIPE                        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UNDERSCORE
 &kp PERCENT      &kp GRAVE      &kp CARET                   &kp AT_SIGN                     &kp QUESTION                              &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-                                                            &bt BT_CLR_ALL                  &trans                                    &kp UP_ARROW  &kp DOWN
+                                                            &kp DELETE                      &trans                                    &kp UP_ARROW  &kp DOWN
             >;
         };
     };
